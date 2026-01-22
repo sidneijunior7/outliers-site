@@ -29,13 +29,8 @@ app.post('/api/leads', async (req, res) => {
             return res.status(500).json({ error: 'Server configuration error' });
         }
 
-        // Debug: Log what we're sending (remove after debugging)
-        console.log('=== WEBHOOK DEBUG ===');
-        console.log('URL:', webhookUrl);
-        console.log('User:', user);
-        console.log('Pass length:', pass?.length);
-        console.log('Body:', JSON.stringify(req.body));
-        console.log('=====================');
+        // Debug logging removed for privacy
+
 
         const response = await fetch(webhookUrl, {
             method: "POST",
