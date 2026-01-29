@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer = ({ logoVariant = "white" }: FooterProps) => {
   const currentYear = new Date().getFullYear();
-  const whatsappLink = import.meta.env.VITE_WHATSAPP_LINK || "#"; // Fallback para segurança
+  const whatsappLink = "https://wa.me/5512996692749"; // Fallback para segurança
   const instagramLink = "https://instagram.com/outliers.invest"; // Substituir pelo link correto
 
   const logoSrc = logoVariant === "white"

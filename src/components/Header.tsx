@@ -18,7 +18,7 @@ const Header = ({ logoVariant = "white" }: HeaderProps) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const whatsappLink = import.meta.env.VITE_WHATSAPP_LINK || "#"; // Fallback para segurança
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5512996692749&text=Ol%C3%A1%20Arthur%2C%20como%20funcionam%20os%20rob%C3%B4s%20gr%C3%A1tis%3F"; // Fallback para segurança
 
   const logoSrc = logoVariant === "white"
     ? "/img/logo_wide_white_text.webp"
